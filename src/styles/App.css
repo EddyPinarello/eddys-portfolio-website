@@ -6,7 +6,7 @@
     --background-color: #101010;
     --font-family: Arial, sans-serif;
     --text-color: white;
-    --link-hover-color: rgba(233, 119, 119, 0.62);
+    --link-hover-color: rgba(231, 163, 100, 0.62);
 }
 body {
     background-color: var(--background-color);
@@ -21,13 +21,15 @@ h1, h2, h3, h4, p, a {
 }
 
 main {
-    max-width: 1200px;
+    max-width: 1400px;
     padding: 1em 6em;
     margin: 0 auto;
 }
 
 a {
     text-decoration: none;
+    transition: color 0.5s ease;
+
 }
 
 a:hover {
@@ -50,4 +52,44 @@ li {
 .navbar-pages {
     display: flex;
     gap: 3em;
+}   
+
+.navbar-items a {
+}
+
+/* NAVBAR SOCIAL VERTICAL */
+.vertical-icons {
+    position: absolute;
+    top: 50%;
+    left: 1em; 
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    z-index: 1000;
+}
+  
+.vertical-icons img {
+    width: 2em;
+    height: 2em;
+    filter: brightness(0) invert(1); /* per icone bianche */
+    transition: transform 0.5s ease;
+}
+  
+.vertical-icons img:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 5em;
+
+}
+
+.right-side-footer {
+    display: flex;
+    flex-direction: column;
 }

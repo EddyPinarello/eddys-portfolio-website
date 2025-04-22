@@ -13,4 +13,23 @@
         padding: 1em;
 
     }
+
+    /* NAVBAR SOCIAL VERTICAL */
+    .vertical-icons {
+        display: none;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 1em;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .right-side-footer {
+        flex-direction: column;
+        align-items: center;
+
+    }
 }
