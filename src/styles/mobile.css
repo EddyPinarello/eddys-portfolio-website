@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    .navbar-items {
+        justify-content: spacebetween;
+        padding: 1em;
+    }
+
+    .navbar-pages {
+        display: none;
+    }
+
+    main {
+        padding: 1em;
+
+    }
+}
