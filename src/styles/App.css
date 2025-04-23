@@ -29,7 +29,6 @@ main {
 a {
     text-decoration: none;
     transition: color 0.5s ease;
-
 }
 
 a:hover {
@@ -72,11 +71,12 @@ li {
 .vertical-icons img {
     width: 2em;
     height: 2em;
-    filter: brightness(0) invert(1); /* per icone bianche */
+    filter: brightness(0) invert(1);
     transition: transform 0.5s ease;
 }
   
 .vertical-icons img:hover {
+    //color: var(--link-hover-color);
     transform: scale(1.05);
 }
 
@@ -85,11 +85,38 @@ li {
 footer {
     display: flex;
     justify-content: space-between;
-    padding: 1em 5em;
+    padding: 1em 6em;
 
 }
 
 .right-side-footer {
     display: flex;
     flex-direction: column;
+}
+
+
+/* HOME */
+.home-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home-presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3em;
+    padding: 2em;
+    width: 100%;
+}
+
+.circle {
+    width: 20em;
+    height: 20em;
+    background-color: #e75b5b;
+    border-radius: 50%;
+    flex-shrink: 0;
 }

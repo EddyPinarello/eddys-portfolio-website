@@ -1,12 +1,21 @@
 import React from 'react';
 
 function Home() {
-  return (
-    <section>
-      <h1>Welcome to My Portfolio</h1>
-      <p>This is the home page of your portfolio.</p>
-    </section>
-  );
-}
+    return (
+        <section className="home-section">
+            <div className="home-presentation">
+                <div className="circle"></div>
+                <div className="text-area">
+                    <h2>Hi, I’m Eddy Pinarello</h2>
+                    <p>Software engineer enthusiast</p>
+                    <p>Learn more about me in:</p>
+                    <a href="/about" className="about-link">About section →</a>
+                </div>
+            </div>
+      </section>
+    );
+  }
+  
+  
 
 export default Home;
