@@ -3,19 +3,34 @@ import cvIcon from '../assets/cv-icon.png';
 import githubIcon from '../assets/github-icon.png';
 import linkedinIcon from '../assets/linkedin-icon.png';
 
-
 function Header() {
+  const currentPath = window.location.pathname;
+
   return (
     <header>
       <nav aria-label="Main Navigation">
         <ul className='navbar-items'>
-          <li><a href="/">Eddy's Portfolio</a></li>
-          <div className='navbar-pages'>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/work-experience">Work Experience</a></li>
-            <li><a href="/about">About</a></li>
-          </div>
+            <li className={currentPath === '/' ? 'active' : ''}>
+                <a href="/">Eddy's Portfolio</a>
+                {currentPath === '/' && <div className="underline"></div>}
+            </li>
+            <div className='navbar-pages'>
+                <li className={currentPath === '/projects' ? 'active' : ''}>
+                <a href="/projects">Projects</a>
+                {currentPath === '/projects' && <div className="underline"></div>}
+                </li>
+                <li className={currentPath === '/work-experience' ? 'active' : ''}>
+                <a href="/work-experience">Work Experience</a>
+                {currentPath === '/work-experience' && <div className="underline"></div>}
+                </li>
+                <li className={currentPath === '/about' ? 'active' : ''}>
+                <a href="/about">About</a>
+                {currentPath === '/about' && <div className="underline"></div>}
+                </li>
+            </div>
         </ul>
+
+
       </nav>
 
       <div className="vertical-icons">

@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function HomeCard({title, text, link, image, reverse }) {
   return (
     <>
@@ -12,7 +13,7 @@ function HomeCard({title, text, link, image, reverse }) {
           <p>{text}</p>
           {link && (
             <a href={link} className="card-link">
-              → Go
+              Check out more →
             </a>
           )}
         </div>
