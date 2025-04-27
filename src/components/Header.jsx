@@ -15,6 +15,10 @@ function Header() {
                 {currentPath === '/' && <div className="underline"></div>}
             </li>
             <div className='navbar-pages'>
+                <li className={currentPath === '/about' ? 'active' : ''}>
+                <a href="/about">About</a>
+                {currentPath === '/about' && <div className="underline"></div>}
+                </li>
                 <li className={currentPath === '/projects' ? 'active' : ''}>
                 <a href="/projects">Projects</a>
                 {currentPath === '/projects' && <div className="underline"></div>}
@@ -22,10 +26,6 @@ function Header() {
                 <li className={currentPath === '/work-experience' ? 'active' : ''}>
                 <a href="/work-experience">Work Experience</a>
                 {currentPath === '/work-experience' && <div className="underline"></div>}
-                </li>
-                <li className={currentPath === '/about' ? 'active' : ''}>
-                <a href="/about">About</a>
-                {currentPath === '/about' && <div className="underline"></div>}
                 </li>
             </div>
         </ul>
