@@ -268,33 +268,117 @@ footer {
 }
 
 
-/* TIMELINE */
-
-.timeline-date {
-    position: absolute;
-    margin-right: 10em;
-}
-
 .timeline-container {
-
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 3em;
 }
 
+/* TIMELINE ITEM */
+.timeline-item {
+    display: flex;
+    position: relative;
+    margin-bottom: 3em;
+}
+
+/* COLONNA SINISTRA: data */
+.timeline-left {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    width: 10em; /* fisso spazio per la data */
+    text-align: right;
+    position: relative;
+}
+
+/* LINEA CENTRALE */
 .timeline-container::before {
     content: "";
     position: absolute;
-    left: 10px;
+    left: 10em; /* UGUALE alla larghezza di .timeline-left */
     top: 0;
     bottom: 0;
-    width: 0.5em;
-    background: var(--secondary-color); /* o il colore che preferisci */
+    width: 3px;
+    background: var(--secondary-color);
 }
 
+/* DATA */
+.timeline-date {
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 0.5em;
+}
 
-.timeline-item{
-    margin-bottom: 1em;
+/* CERCHIO */
+.timeline-circle {
+    position: absolute;
+    left: 10em; /* UGUALE alla larghezza di .timeline-left */
+    transform: translateX(-50%); /* CENTRATO sulla linea */
+    top: 0.5em;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* COLONNA DESTRA: card */
+.timeline-right {
+    flex: 1;
+    padding-left: 2em; /* spazio tra linea e card */
+}
+
+/* CARD */
+.work-card {
     background-color: var(--secondary-color);
+    padding: 1.5em;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: transform 0.3s;
+}
+
+.work-card:hover {
+    transform: translateY(-5px);
+}
+
+/* HEADER CARD */
+.work-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.work-card-role {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.work-card-company {
+    font-size: 0.9rem;
+    color: lightgray;
+}
+
+/* DESCRIZIONE */
+.work-card-description {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-bottom: 1em;
+}
+
+/* TAGS */
+.work-card-tags {
+    display: flex;
+    gap: 0.5em;
+}
+
+.work-card-tag {
+    background-color: #1e1e1e;
+    color: #f35;
+    padding: 0.3em 0.6em;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-family: monospace;
 }

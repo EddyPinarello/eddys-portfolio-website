@@ -2,14 +2,14 @@ export default function WorkEduCard({ role, company, title, description, tags, d
     return (
         <div className="timeline-item">
             <div className="timeline-left">
-                <div className="timeline-date">{dateRange}</div>
                 <div className="timeline-circle" />
+                <div className="timeline-date">{dateRange}</div>
             </div>
             <div className="timeline-right">
                 <div className="work-card">
                     <div className="work-card-header">
-                        <span className="work-card-role">{role}</span>
-                        <span className="work-card-company">{company}</span>
+                        <p className="work-card-role">{role}</p>    
+                        <p className="work-card-company">{company}</p>
                     </div>
                     <p className="work-card-description">{description}</p>
                     <div className="work-card-tags">
