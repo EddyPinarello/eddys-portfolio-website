@@ -64,4 +64,26 @@
         height: 30em;
         width: 24em;
     }
+
+    /* WORKEDUCARD */
+    
+    .timeline-left {
+        width: 3em;
+    }
+    
+    .timeline-container {
+
+        padding: 0;
+    }
+
+    .timeline-container::before {
+        left: 4em;
+    }
+
+    /* CERCHIO */
+    .timeline-circle {
+        left: 4.1em; /* UGUALE alla larghezza di .timeline-left */
+
+    }
+    
 }

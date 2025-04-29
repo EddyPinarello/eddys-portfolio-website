@@ -9,9 +9,9 @@ function ProjectCard({title, text, image, link, tags}) {
             <div className="project-card-content">
                 <h3>{title}</h3>
                 <p>{text}</p>
-                <div className="project-card-tags">
+                <div className="tags">
                     {tags.map((tag, index) => (
-                        <div key={index} className="project-card-tag">
+                        <div key={index} className="tag">
                             <span>{"</"}</span>{tag}<span>{">"}</span>
                         </div>
                     ))}

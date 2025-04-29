@@ -6,15 +6,17 @@ export default function WorkEduCard({ role, company, title, description, tags, d
                 <div className="timeline-date">{dateRange}</div>
             </div>
             <div className="timeline-right">
-                <div className="work-card">
-                    <div className="work-card-header">
-                        <p className="work-card-role">{role}</p>    
-                        <p className="work-card-company">{company}</p>
+                <div className="work-edu-card">
+                    <div className="work-edu-card-header">
+                        <p className="work-edu-card-role">{role}</p>    
+                        <p className="work-edu-card-company">{company}</p>
                     </div>
-                    <p className="work-card-description">{description}</p>
-                    <div className="work-card-tags">
+                    <p className="work-edu-card-description">{description}</p>
+                    <div className="tags">
                         {tags.map((tag, index) => (
-                            <div key={index} className="work-card-tag">{`</${tag}>`}</div>
+                            <div key={index} className="tag">
+                                <span>{"</"}</span>{tag}<span>{">"}</span>
+                            </div>
                         ))}
                     </div>
                 </div>

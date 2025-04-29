@@ -247,13 +247,14 @@ footer {
     text-overflow: ellipsis;
 }
 
-.project-card-tags {
+.tags {
     display: flex;
+    flex-wrap: wrap;
     gap: 0.7em;
     margin-top: 1em;
 }
 
-.project-card-tag {
+.tag {
     background-color: var(--tag-color);
     padding: 0.6em;
     border-radius: 6px;
@@ -263,12 +264,13 @@ footer {
     transition: background-color 0.3s;
 }
 
-.project-card-tag span {
+.tag span {
     color: var(--accent-color);
 }
 
 
 .timeline-container {
+    padding: 0 3em;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -295,8 +297,8 @@ footer {
 .timeline-container::before {
     content: "";
     position: absolute;
-    left: 10em; /* UGUALE alla larghezza di .timeline-left */
-    top: 0;
+    left: 12.9em; /* UGUALE alla larghezza di .timeline-left */
+    top: 1em;
     bottom: 0;
     width: 3px;
     background: var(--secondary-color);
@@ -304,9 +306,9 @@ footer {
 
 /* DATA */
 .timeline-date {
+    margin-top: 0.7em;
     color: white;
     font-size: 0.9rem;
-    margin-bottom: 0.5em;
 }
 
 /* CERCHIO */
@@ -314,10 +316,10 @@ footer {
     position: absolute;
     left: 10em; /* UGUALE alla larghezza di .timeline-left */
     transform: translateX(-50%); /* CENTRATO sulla linea */
-    top: 0.5em;
-    width: 10px;
-    height: 10px;
-    background: red;
+    top: 1em;
+    width: 12px;
+    height: 12px;
+    background: var(--accent-color);
     border-radius: 50%;
     z-index: 1;
 }
@@ -329,56 +331,39 @@ footer {
 }
 
 /* CARD */
-.work-card {
+.work-edu-card {
     background-color: var(--secondary-color);
     padding: 1.5em;
-    border-radius: 10px;
-    width: 100%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    border-radius: 8px;
     transition: transform 0.3s;
 }
 
-.work-card:hover {
+.work-edu-card:hover {
     transform: translateY(-5px);
 }
 
 /* HEADER CARD */
-.work-card-header {
+.work-edu-card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1em;
 }
 
-.work-card-role {
+.work-edu-card-role {
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
 }
 
-.work-card-company {
+.work-edu-card-company {
     font-size: 0.9rem;
     color: lightgray;
 }
 
 /* DESCRIZIONE */
-.work-card-description {
+.work-edu-card-description {
     font-size: 0.95rem;
     color: #ccc;
     margin-bottom: 1em;
-}
-
-/* TAGS */
-.work-card-tags {
-    display: flex;
-    gap: 0.5em;
-}
-
-.work-card-tag {
-    background-color: #1e1e1e;
-    color: #f35;
-    padding: 0.3em 0.6em;
-    border-radius: 5px;
-    font-size: 0.75rem;
-    font-family: monospace;
 }

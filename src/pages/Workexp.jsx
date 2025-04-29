@@ -13,7 +13,7 @@ const workExperienceData = [
       role: "Software Engineer",
       company: "Google",
       description: "Worked on improving search algorithms.",
-      tags: ["React", "TypeScript"],
+      tags: ["React", "TypeScript","CAAAAAAAAAAAA"],
       dateRange: "09/2020 to 09/2022"
     }
   ];
