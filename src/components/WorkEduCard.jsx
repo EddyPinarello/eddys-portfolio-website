@@ -1,8 +1,8 @@
-export default function WorkEduCard({ role, company, title, description, tags, dateRange }) {
+export default function WorkEduCard({ role, company, title, description, tags, dateRange, isCurrent }) {
     return (
         <div className="timeline-item">
             <div className="timeline-left">
-                <div className="timeline-circle" />
+                <div className={isCurrent ? "timeline-circle current" : "timeline-circle"} />
                 <div className="timeline-date">{dateRange}</div>
             </div>
             <div className="timeline-right">

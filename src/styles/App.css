@@ -324,6 +324,20 @@ footer {
     z-index: 1;
 }
 
+/* CERCHIO LAMPEGGIANTE */
+.current {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
 /* COLONNA DESTRA: card */
 .timeline-right {
     flex: 1;

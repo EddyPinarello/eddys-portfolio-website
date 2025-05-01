@@ -1,21 +1,18 @@
-import WorkEduCard from "./WorkEduCard";
+import WorkEduCard from './WorkEduCard';
 
-function Timeline({ items }) {
+export default function Timeline({ items }) {
     return (
         <div className="timeline-container">
-            {items.map((item, index) => (
-                <WorkEduCard
-                    key={index}
-                    role={item.role}
-                    company={item.company}
-                    title={item.title}
-                    description={item.description}
-                    tags={item.tags}
-                    dateRange={item.dateRange}
-                />
-            ))}
+            {items.map((item, index) => {
+                const current = item.dateRange.includes("current");
+                return (
+                    <WorkEduCard
+                        key={index}
+                        {...item}
+                        isCurrent={current}
+                    />
+                );
+            })}
         </div>
     );
 }
-
-export default Timeline;
