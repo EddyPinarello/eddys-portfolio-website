@@ -72,13 +72,43 @@
     }
     
     .timeline-container {
-
         padding: 0;
     }
 
     .timeline-container::before {
         left: 4em;
     }
+    /* Pezzettino rosso alla fine */
+    .timeline-end {
+        position: absolute;
+        left: 3.6em;
+        bottom: 0;
+        width: 16px;
+        height: 6px;
+        background-color: var(--accent-color);
+        border-radius: 8px;
+        z-index: 1;
+    }
+    
+    .timeline-right {
+        flex: 1;
+        padding-left: 1.8em;
+    }
+
+    .work-edu-card {
+        padding: 1.2em;
+    }
+    .work-edu-card-role {
+        font-size: 1rem;
+    }
+
+    .timeline-date {
+        margin-top: 0.8em;
+        color: white;
+        font-size: 0.7rem;
+    }
+    
+
 
     /* CERCHIO */
     .timeline-circle {
