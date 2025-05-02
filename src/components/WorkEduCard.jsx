@@ -1,6 +1,6 @@
-export default function WorkEduCard({ role, company, title, description, tags, dateRange, isCurrent }) {
+export default function WorkEduCard({ role, company, description, tags, dateRange, isCurrent, onClick }) {
     return (
-        <div className="timeline-item">
+        <div className="timeline-item" onClick={onClick} style={{ cursor: 'pointer' }}>
             <div className="timeline-left">
                 <div className={isCurrent ? "timeline-circle current" : "timeline-circle"} />
                 <div className="timeline-date">{dateRange}</div>
@@ -11,7 +11,13 @@ export default function WorkEduCard({ role, company, title, description, tags, d
                         <p className="work-edu-card-role">{role}</p>    
                         <p className="work-edu-card-company">{company}</p>
                     </div>
-                    <p className="work-edu-card-description">{description}</p>
+                    <ul className="work-edu-card-description">
+                        {Array.isArray(description) ? (
+                            description.map((point, idx) => <li key={idx}>{point}</li>)
+                        ) : (
+                            <li>{description}</li>
+                        )}
+                        </ul>
                     <div className="tags">
                         {tags.map((tag, index) => (
                             <div key={index} className="tag">

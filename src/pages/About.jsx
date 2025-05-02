@@ -2,20 +2,39 @@ import React from 'react'
 import Timeline from '../components/Timeline';
 const aboutData = [
     {
-      role: "Software Engineer",
-      company: "Google",
-      description: "Worked on the new user dashboard.",
-      tags: ["React", "TypeScript"],
-      dateRange: "10/2022 to current",
+      role: "Mentorship Program Participant",
+      company: "Superhero Valley",
+      description: [
+        "Selected as one of the Italian students for the mentorship program of Superhero Valley.",
+        "Engaged in personalized mentorship from high-impact mentors in the big tech industry.",
+        "Aspired to make a positive impact in the community through guidance in computer science fields."
+      ],
+      tags: ["Mentorship", "Coaching"],
+      dateRange: "03/2025 to current",
+      onClick: () => window.open("https://superherovalley.fun/", "_blank")
     },
     {
-      role: "Software Engineer",
-      company: "Google",
-      description: "Worked on improving search algorithms.",
-      tags: ["React", "TypeScript","CAAAAAAAAAAAA"],
-      dateRange: "09/2020 to 09/2022",
-    }
-  ];
+      role: "Bachelor's Degree in Computer Science",
+      company: "University of Padua",
+      description: [
+        "Studied algorithms, programming in C/C++, cybersecurity, operating systems, databases, and mathematics.",
+        "Built a PostgreSQL tennis tournament database as a top-graded project."
+      ],
+      tags: ["C", "C++", "Python", "PostgreSQL", "Algorithms", "Cybersecurity"],
+      dateRange: "10/2022 to current",
+      onClick: () => window.open("https://www.unipd.it", "_blank")
+    },
+    {
+        role: "High School Diploma in Automation",
+        company: "ITIS Max Planck",
+        description: [
+          "computer science fields. Superhero Valley is committed to helping outstanding students fulfill their aspirations and make a positive impact in their communities through personalized mentorship from high-impact mentors of the big tech industry",
+        ],
+        tags: ["Automation", "Electronics"],
+        dateRange: "09/2017 to 07/2022",
+        onClick: () => window.open("https://www.maxplanck.edu.it/index.php/it/", "_blank")
+    },
+];
 
 function About() {
   return (

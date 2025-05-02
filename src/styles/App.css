@@ -40,7 +40,7 @@ a:hover {
 }
 
 /* NAVBAR */
-li {
+.navbar-items li {
     list-style: none;
 }
 
@@ -204,7 +204,6 @@ footer {
 .project-card {
     height: 30em;
     width: 100%;
-
     border-radius: 6px;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -273,6 +272,7 @@ footer {
     padding: 0 3em;
     display: flex;
     flex-direction: column;
+    //align-items: center;
     position: relative;
 }
 
@@ -302,7 +302,7 @@ footer {
     background: var(--secondary-color);
 }
 
-/* Pezzettino rosso alla fine */
+/* Little red piece at the end */
 .timeline-end {
     position: absolute;
     left: 12.52em;
@@ -314,14 +314,14 @@ footer {
     z-index: 1;
 }
 
-/* DATA */
+/* date format */
 .timeline-date {
     margin-top: 0.8em;
     color: white;
     font-size: 0.9rem;
 }
 
-/* CERCHIO */
+/* red circle */
 .timeline-circle {
     position: absolute;
     left: 10em; 
@@ -335,7 +335,7 @@ footer {
     z-index: 1;
 }
 
-/* CERCHIO LAMPEGGIANTE */
+/* blinking red circle */
 .current {
     animation: border-blink 1.5s infinite;
 }
@@ -349,15 +349,16 @@ footer {
     }
 }
 
-/* COLONNA DESTRA: card */
+/* right part of the line */
 .timeline-right {
     flex: 1;
     padding-left: 2em;
 }
 
-/* CARD */
+/* workedu card */
 .work-edu-card {
     background-color: var(--secondary-color);
+    //width:30em;
     padding: 1.5em;
     border-radius: 8px;
     transition: transform 0.3s;
@@ -367,7 +368,7 @@ footer {
     transform: translateY(-2px);
 }
 
-/* HEADER CARD */
+/* title of the card */
 .work-edu-card-header {
     display: flex;
     justify-content: space-between;
@@ -388,6 +389,7 @@ footer {
 
 .work-edu-card-description {
     font-size: 0.95rem;
-    color: #ccc;
+    color: white;
     margin-bottom: 1em;
+    margin-left: 1.1em;
 }
