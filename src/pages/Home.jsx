@@ -16,33 +16,37 @@ function Home() {
                 </div>
             </div>
             <div className="home-cards">
-            <a href='/projects' className='home-cards-title'>Project section →</a>
+                <h2 className='home-cards-title'>
+                    <a href='/projects'>Project section →</a>
+                </h2>
 
-            <HomeCard 
-                title="CorsaIdeale webapp" 
-                text="This project was developed for the Web Technologies course at the University of
-                    Padua, Academic Year 2024-2025."
-                link="/projects" 
-                image={corsaIdealeHome} 
-                reverse={false}
-            />
-            <HomeCard 
-                title="Sensor Management Desktop App" 
-                text="This is a Qt-based desktop application that functions as a CRUD (Create, Read, Update, Delete)
-                    system for managing various sensors." 
-                link="/projects" 
-                image={sensorManagement}
-                reverse={false}
-            />   
-            <a href='/work-experience' className='home-cards-title'>Work exp section →</a>
+                <HomeCard 
+                    title="CorsaIdeale webapp" 
+                    text="This project was developed for the Web Technologies course at the University of
+                        Padua, Academic Year 2024-2025."
+                    link="/projects" 
+                    image={corsaIdealeHome} 
+                    reverse={false}
+                />
+                <HomeCard 
+                    title="Sensor Management Desktop App" 
+                    text="This is a Qt-based desktop application that functions as a CRUD (Create, Read, Update, Delete)
+                        system for managing various sensors." 
+                    link="/projects" 
+                    image={sensorManagement}
+                    reverse={false}
+                />   
+                <h2 className='home-cards-title'>
+                    <a href='/work-experience'>Work exp section →</a>
+                </h2>
 
-            <HomeCard 
-                title="swe" 
-                text="Here's what I've done so far in the industry." 
-                link="/work-experience" 
-                image="/assets/linkedin-icon.png" 
-                reverse={true}
-            />           
+                <HomeCard 
+                    title="swe" 
+                    text="Here's what I've done so far in the industry." 
+                    link="/work-experience" 
+                    image="/assets/linkedin-icon.png" 
+                    reverse={true}
+                />           
             </div>
       </section>
     );

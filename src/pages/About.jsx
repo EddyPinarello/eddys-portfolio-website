@@ -5,9 +5,7 @@ const aboutData = [
       role: "Mentorship Program Participant",
       company: "Superhero Valley",
       description: [
-        "Selected as one of the Italian students for the mentorship program of Superhero Valley.",
-        "Engaged in personalized mentorship from high-impact mentors in the big tech industry.",
-        "Aspired to make a positive impact in the community through guidance in computer science fields."
+        "I am one of the Italian students chosen for the mentorship program of Superhero Valley, a community dedicated to guiding students in computer science fields. Superhero Valley is committed to helping outstanding students fulfill their aspirations and make a positive impact in their communities through personalized mentorship from high-impact mentors of the big tech industry"
       ],
       tags: ["Mentorship", "Coaching"],
       dateRange: "03/2025 to current",
@@ -25,14 +23,14 @@ const aboutData = [
       onClick: () => window.open("https://www.unipd.it", "_blank")
     },
     {
-        role: "High School Diploma in Automation",
-        company: "ITIS Max Planck",
-        description: [
-          "computer science fields. Superhero Valley is committed to helping outstanding students fulfill their aspirations and make a positive impact in their communities through personalized mentorship from high-impact mentors of the big tech industry",
-        ],
-        tags: ["Automation", "Electronics"],
-        dateRange: "09/2017 to 07/2022",
-        onClick: () => window.open("https://www.maxplanck.edu.it/index.php/it/", "_blank")
+      role: "High School Diploma in Automation",
+      company: "ITIS Max Planck",
+      description: [
+      "computer science fields. Superhero Valley is committed to helping outstanding students fulfill their aspirations and make a positive impact in their communities through personalized mentorship from high-impact mentors of the big tech industry",
+      ],
+      tags: ["Automation", "Electronics"],
+      dateRange: "09/2017 to 07/2022",
+      onClick: () => window.open("https://www.maxplanck.edu.it/index.php/it/", "_blank")
     },
 ];
 
