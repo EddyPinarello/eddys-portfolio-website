@@ -3,6 +3,7 @@ import cvIcon from '../assets/cv-icon.png';
 import githubIcon from '../assets/github-icon.png';
 import linkedinIcon from '../assets/linkedin-icon.png';
 import AnimatedHamburgerButton from './AnimatedHamburgerButton';
+import resumeDownload from '../assets/resume/Eddy_Pinarello_resume.pdf'
 
 function Header() {
   const currentPath = window.location.pathname;
@@ -44,8 +45,8 @@ function Header() {
       </nav>
 
       <div className="vertical-icons">
-        <a href="https://www.linkedin.com/in/eddypinarello" target="_blank" rel="noopener noreferrer">
-          <img src={cvIcon} alt="Icon 1" />
+        <a href={resumeDownload} target="_blank" rel="noopener noreferrer">
+            <img src={cvIcon} alt="Download Resume" />
         </a>
         <a href="https://www.linkedin.com/in/eddypinarello" target="_blank" rel="noopener noreferrer">
           <img src={linkedinIcon} alt="Icon 2" />

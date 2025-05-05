@@ -41,7 +41,6 @@
         transition: all 0.3s ease;
     }
     
-    /* Animazione quando il menu è aperto */
     .hamburger-button.open .line-1 {
         transform: translateY(10px) rotate(45deg);
     }
@@ -54,7 +53,6 @@
         transform: translateY(-10px) rotate(-45deg);
         }
     
-        /* Stili per il menu dropdown */
     .dropdown-menu {
         display: flex;
         flex-direction: column;
@@ -177,7 +175,6 @@
     .timeline-container::before {
         left: 4em;
     }
-    /* Pezzettino rosso alla fine */
     .timeline-end {
         position: absolute;
         left: 3.6em;
