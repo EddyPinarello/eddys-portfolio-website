@@ -42,7 +42,7 @@ const AnimatedHamburgerButton = ({ onClick, isOpen }) => {
                 </li>
                 <li>
                     <a href={resumeDownload} target="_blank" rel="noopener noreferrer">
-                        <img src={cvIcon} alt="Donwload Resume" />
+                        <img src={cvIcon} alt="Download Resume" />
                     </a>
                     <a href="https://www.linkedin.com/in/eddypinarello" target="_blank" rel="noopener noreferrer">
                         <img src={linkedinIcon} alt="Link to LinkedIn" />
