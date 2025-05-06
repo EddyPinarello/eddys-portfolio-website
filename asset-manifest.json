@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/eddys-portfolio-website/static/css/main.ae9329f8.css",
+    "main.js": "/eddys-portfolio-website/static/js/main.71c5d517.js",
+    "static/media/Eddy_Pinarello_resume.pdf": "/eddys-portfolio-website/static/media/Eddy_Pinarello_resume.dd01db572c4fab5c439b.pdf",
+    "static/media/corsaIdealeHome.webp": "/eddys-portfolio-website/static/media/corsaIdealeHome.11556fb9dca9a7c3e86f.webp",
+    "static/media/sensorManagementHome.webp": "/eddys-portfolio-website/static/media/sensorManagementHome.51c894a3ff2f57edaa8e.webp",
+    "index.html": "/eddys-portfolio-website/index.html",
+    "main.ae9329f8.css.map": "/eddys-portfolio-website/static/css/main.ae9329f8.css.map",
+    "main.71c5d517.js.map": "/eddys-portfolio-website/static/js/main.71c5d517.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae9329f8.css",
+    "static/js/main.71c5d517.js"
+  ]
+}
